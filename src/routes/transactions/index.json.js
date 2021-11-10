@@ -17,6 +17,7 @@ export async function get() {
 					transactionType
 					transactionCoin
 					coinPrice
+					amount
 					total
 				}
 			}
