@@ -75,7 +75,9 @@
 					<td>{amount}</td>
 					<td>{total}</td>
 					<th>
-						<button class="btn btn-ghost btn-xs">details</button>
+						<a sveltekit:prefetch class="btn btn-ghost btn-xs" href={`/transactions/${id}`}
+							>details</a
+						>
 					</th>
 				</tr>
 			{/each}

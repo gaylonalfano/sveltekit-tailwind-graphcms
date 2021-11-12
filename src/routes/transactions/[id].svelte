@@ -24,8 +24,22 @@
 	export let transaction;
 </script>
 
-<pre>{JSON.stringify(transaction, null, 2)}</pre>
+<!-- <pre>{JSON.stringify(transaction, null, 2)}</pre> -->
 
 <svelte:head>
 	<title>NFT Tracker | WAGMI</title>
 </svelte:head>
+
+<div class="card text-center shadow-2xl max-w-xl mt-20 mx-auto">
+	<figure class="px-10 pt-10">
+		<img src="https://picsum.photos/id/1005/400/250" class="rounded-xl" />
+	</figure>
+	<div class="card-body">
+		<h2 class="card-title">{transaction.nft.collection} #{transaction.nft.nftId}</h2>
+		<p>{transaction.transactionType}</p>
+		<p>${transaction.total}</p>
+		<div class="justify-center card-actions">
+			<a class="btn btn-outline btn-accent" href={'/'}>Back</a>
+		</div>
+	</div>
+</div>
